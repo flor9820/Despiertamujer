@@ -1,0 +1,61 @@
+.solo-movil,
+.solo-pc {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+.solo-movil {
+ display: block;
+   }
+  }
+@media screen and (min-width: 768px) {
+.solo-pc {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+}
+}
+      
+body{
+background-color: #7B19B7;     /*Fondo de la pagina*/
+}
+
+.titulo{                /*Titulo unico*/
+    text-align: center;          /*Alinea el texto al centro*/
+    color: #ffffff;            /*Color blanco*/
+    font-family: monospace;        /*Cambia el tip[o de letra*/
+    background-color: #ee82ee;         /*pone el fondo morosado*/
+}
+                  /*Suptitulo varios*/
+.suptitulo{
+    text-align: center;        /*Centra el texto*/
+    color: #ffffff;           /*Cambia el color del texto*/
+}
+                       /*Imagen con texto alado derecho*/
+.Imagen{
+    display: flex;
+    align-items: center;
+    color: #ffffff
+}
+.Imagen img{
+    max-width: 200px;
+    margin-right: 20px;
+}
+                 /*Todo los parrafo*/
+p{
+    color: #ffffff;    /*Todos los parrafo son blanco*/
+}
+            /*Linea hr mas gruesas y blancas*/
+.linea {
+    height: 5px;     /*Grosol de la linea*/
+    background-color: #ffffff;      /*Color de la linea*/
+    
+}
+          /*Centra imagen*/
+.Imagen-centrada {
+    text-align: center;       /*Centra la imagen*/
+    
+}
+          /*Imagen redonda*/
+.Redonda{
+    border-radius: 50%;      /*Redondea la imagen*/
+}
