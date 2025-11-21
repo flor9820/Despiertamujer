@@ -45,6 +45,10 @@ p{
     color: #ffffff;    /*Todos los parrafo son blanco*/
     /*text-align: center*/
 }
+
+a{
+    color: #ffffff;
+}
             /*Linea hr mas gruesas y blancas*/
 .linea {
     height: 5px;     /*Grosol de la linea*/
