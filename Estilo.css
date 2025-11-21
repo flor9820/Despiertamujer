@@ -30,16 +30,6 @@ background-color: #7B19B7;     /*Fondo de la pagina*/
     text-align: center;        /*Centra el texto*/
     color: #ffffff;           /*Cambia el color del texto*/
 }
-                       /*Imagen con texto alado derecho*/
-.Imagen{
-    display: flex;
-    align-items: center;
-    color: #ffffff
-}
-.Imagen img{
-    max-width: 200px;
-    margin-right: 20px;
-}
                  /*Todo los parrafo*/
 p{
     color: #ffffff;    /*Todos los parrafo son blanco*/
@@ -47,7 +37,7 @@ p{
 }
 
 a{
-    color: #ffffff;
+    color: #ffffff;    /*enlace blancos*/
 }
             /*Linea hr mas gruesas y blancas*/
 .linea {
