@@ -43,6 +43,7 @@ background-color: #7B19B7;     /*Fondo de la pagina*/
                  /*Todo los parrafo*/
 p{
     color: #ffffff;    /*Todos los parrafo son blanco*/
+    /*text-align: center*/
 }
             /*Linea hr mas gruesas y blancas*/
 .linea {
@@ -53,9 +54,16 @@ p{
           /*Centra imagen*/
 .Imagen-centrada {
     text-align: center;       /*Centra la imagen*/
-    
+}
+
+.bordeimagen {
+    border-radius: 10%;
 }
           /*Imagen redonda*/
 .Redonda{
     border-radius: 50%;      /*Redondea la imagen*/
+}
+
+.bordes{
+    border: 5px dashed magenta
 }
