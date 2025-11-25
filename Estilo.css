@@ -124,5 +124,6 @@ footer {
     text-align: center; /*centra el texto*/
     padding: 8px;  /*espancion del pies de pagina*/
     font-size: 15px; /*tamañol de la letra*/
-    color: #000000 /*color de la letra*/
+    color: #000000; /*color de la letra*/
+    border-radius: 10px 10px 30px 30px;
 }
