@@ -1,0 +1,105 @@
+/* --- Estilos Generales y Modo Oscuro --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.titulo-galeria {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #841dad;
+}
+
+.titulo-galeria h1 {
+    color: #e611f9; /* Color cian vibrante */
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.titulo-galeria p {
+    color: #ffffff;
+}
+
+/* --- Configuración de la Cuadrícula (Grid) --- */
+.galeria-grid {
+    display: grid;
+    /* Define 3 columnas de igual ancho por defecto */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre los items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Diseño de los Items de la Galería --- */
+.galeria-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px) scale(1.02); /* Efecto de "levantar" y zoom */
+    box-shadow: 0 8px 20px #a611ab;/*rgba(0, 188, 212, 0.4);  Sombra brillante en hover */
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 385px;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    transition: opacity 0.3s ease;
+}
+
+/* --- Caption o Título sobre la Imagen --- */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: #fff;
+    transform: translateY(100%); /* Inicialmente oculta el caption */
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover .caption {
+    transform: translateY(0); /* Muestra el caption al pasar el cursor */
+}
+
+.caption h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #bd3eb7;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* --- Media Queries (Responsividad) --- */
+@media (max-width: 900px) {
+    .galeria-grid {
+        /* En pantallas medianas (tablets), pasa a 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-grid {
+        /* En pantallas pequeñas (móviles), pasa a 1 columna */
+        grid-template-columns: 1fr;
+    }
+    .titulo-galeria h1 {
+        font-size: 2em;
+    }
+}
