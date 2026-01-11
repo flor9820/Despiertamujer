@@ -2,17 +2,17 @@ html{
     scroll-behavior:smooth;
 }
 body{
-background-color:hsl(304, 100%, 46%);     /*Fondo de la pagina*/
+    background-color:hsl(304, 100%, 46%);     /*Fondo de la pagina*/
 }
 
 #titulo {                /*Titulo unico*/
- font-family: "segoe UI", sans-serif; /*tipo de letra*/
- font-size: 40px; /*tamañol*/
- color: hsl(300, 100%, 20%, 1); /*colorde la letra*/
- text-align: center; /*central texto*/
- text-shadow: 5px 5px 2px rgba(0,0,0,0.2); /*sonbra del texto*/
- margin-top: 20px; /*margen superiol*/
- animation: brillar 1s infinite alternate; /*animacio*/
+    font-family: "segoe UI", sans-serif; /*tipo de letra*/
+    font-size: 40px; /*tamañol*/
+    color: hsl(300, 100%, 20%, 1); /*colorde la letra*/
+    text-align: center; /*central texto*/
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.2); /*sonbra del texto*/
+    margin-top: 20px; /*margen superiol*/
+    animation: brillar 1s infinite alternate; /*animacio*/
 }
 @keyframes brillar { /*configuracion de la animacion*/
 
@@ -34,6 +34,7 @@ li{
     display:inline;
 }
 a.estiloboton{
+    color:#fff;
     text-decoration: none;
     background-color: #ff69b4;
     padding: 3px 5px;
@@ -45,7 +46,7 @@ a.estiloboton{
 }
 a.estiloboton:hover{
     transform:scale(0.9) ;
-    background-color: #800080
+    background-color: #800080;
 }
 
                   /*Suptitulo varios*/
@@ -58,10 +59,6 @@ p{
     color: #fff;    /*Todos los parrafo son blanco*/
     /*text-align: center*/
 }
-
-a{
-    color: #ffffff;    /*enlace blancos*/
-}
             /*Linea hr mas gruesas y blancas*/
 .linea {
     height: 5px;     /*Grosol de la linea*/
@@ -72,7 +69,6 @@ a{
 figure#foto_enlace{
     margin:0;
     text-align:center;
-    font-size:15px;
     color:#fff;
 }
 figure#foto_enlace h2{
@@ -142,32 +138,69 @@ figure#fotos2 img{
     border: 5px solid #ffffff;
     border-radius: 10px
 }
-
-
-
+figure#violencia{
+    margin:0;
+    text-align:center;
+}
+figure#violencia img{
+    width:300px;
+     height:300px;
+    border-radius:10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+figure#violencia2{
+    margin:0;
+    text-align:center;
+}
+figure#violencia2 img{
+    width:300px;
+    height:300px;
+    border-radius:10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+figure#violencia3{
+    margin:0;
+    text-align:center;
+}
+figure#violencia3 img{
+    width:300px;
+    height:300px;
+    border-radius:10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
 
                       /*Novedades del programa*/
 div#Novedades{
-
+    margin:0;
 }
 div#Novedades img{
-
+    display:block;
+    margin:auto;
+    width:300px;
+    height:300px;
+    border-radius:20px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.5);
 }
 div#Novedades p{
 
 }
-
+div#Novedades p#tituloN{
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+}
 
 
 
                        /*pies de pagina*/
 footer {
+    margin:10px 0 0 0;
     background-image: url("../Imagenes/pies.png"); /*fondo del pies de pagina*/
     background-size: cover; /*ase que la imagen se adate al pies de pagina*/
     background-position: center;  /*centra la imagen*/
     background-repeat: no-repeat;  /*evita que la imagen se repita*/
     text-align: center; /*centra el texto*/
-    padding: 8px;  /*espancion del pies de pagina*/
+    padding: 5px;  /*espancion del pies de pagina*/
     font-size: 15px; /*tamañol de la letra*/
     color: #000000; /*color de la letra*/
     border-radius: 10px 10px 30px 30px;
