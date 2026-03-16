@@ -3,8 +3,8 @@
   "short_name": "Mujer",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#6A0DAD",
+  "theme_color": "#6A0DAD",
   "orientation": "portrait",
   "icons": [
     {
@@ -13,7 +13,7 @@
       "type": "image/png"
     },
     {
-      "src": "Imagenes/pies.png",
+      "src": "Imagenes/Mujer.png",
       "sizes": "512x512",
       "type": "image/png"
     }
